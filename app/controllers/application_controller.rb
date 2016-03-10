@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  #create training table object available for all controllers
   before_filter :get_trainings
   def get_trainings
   	db = Mdb.open("/Users/corrinasthename/Desktop/cs169/BCGC.mdb")

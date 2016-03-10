@@ -28,6 +28,8 @@ class HomeController < ApplicationController
     render text: output
   end
 
+  #grabbing methods for when you already have the specific training id and need
+  #a certain attribute to fill in the template
   def cert_num
   	# training_id = params[:training_id]
   	db = Mdb.open("/Users/corrinasthename/Desktop/cs169/BCGC.mdb")
@@ -56,7 +58,7 @@ class HomeController < ApplicationController
   end
 
   def instructors
-  	
+
   end
 
 end
